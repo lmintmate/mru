@@ -518,8 +518,6 @@ function! s:MRU_Open_Window(...)
             exe winnum . 'wincmd w'
         endif
 
-        setlocal modifiable
-
         " Delete the contents of the buffer to the black-hole register
         setlocal modifiable
         silent! %delete _
